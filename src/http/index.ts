@@ -1,5 +1,4 @@
-import { Server } from "./server";
+import { Auth } from './middlewares/auth';
+import { Server } from './server';
 
-export {
-  Server
-}
+export { Server, Auth };

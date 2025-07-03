@@ -1,3 +1,7 @@
+import { config } from '../config';
+import { Server } from './http';
+
 export const App = () => {
-  console.log('Hello World!');
+  const server = new Server({ port: config.server.port });
+  server.listen();
 };
